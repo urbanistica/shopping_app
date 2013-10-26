@@ -1,0 +1,25 @@
+<p>new purchase</p>
+
+<%= form_tag (@stage > 1 ? "create" : "new") do %>
+
+<%= hidden_field_tag :stage, @stage %>
+
+<% if @stage == 1 %>
+<div>
+    <%= label_tag :name %>
+    <%= text_field_tag :name %>
+</div>
+<% end %>
+
+<% if @stage == 2 %>
+<div>
+    <%= label_tag :email %>
+    <%= email_field_tag :email %>
+</div>
+<% end %>
+
+<div>
+	<%= submit_tag %>
+</div>
+
+<% end %>

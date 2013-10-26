@@ -1,1 +1,5 @@
 This file was created by Dan Donaldson, October 20, 2013.
+
+This application allows you to store things to be bought in a shopping list.
+
+Last update October 25, 2013.
